@@ -143,7 +143,7 @@ future::plan(multiprocess, workers = cores)
 
 # GENETICBOOST ------------------------------------------------------------
 # calculate the optimal number of n_rounds
-if(!is.null(max_time)) selection[["n_rounds"]]  <- (floor((max_time - burn_in_time)/burn_in_time))*(cores)
+if(!is.null(max_time)) selection[["n_rounds"]]  <- (floor((max_time - burn_in_time)/burn_in_time))*(cores*4)
 
 # message
 if(verbose){
