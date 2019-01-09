@@ -64,7 +64,7 @@ featureSelection <- function(data,
                              bootstrap = "none",
                              boosting = boostingControl(),
                              early_stopping = "none",
-                             cores = 1,
+                             cores = NULL,
                              verbose = TRUE){
 
 # SETUP -------------------------------------------------------------------
